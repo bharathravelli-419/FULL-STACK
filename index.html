@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full stack web Dev.</title>
+    <style>
+      h1{
+          color: brown;
+          font-size:24px;
+      }
+      p{
+          color: blue !important;
+      }
+      
+
+      #f1,h1{
+          color:black;
+      }
+    </style>
+  
 </head>
+<!-- inline css has the highest priority-->
 <body>
-    <h1 style="color: blue;font-size: 20px;"> this is a heading</h1>
-    <p style="font-size:30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <h1>
+        inline css > ID selector >element slector
+    </h1>
+    <h1> this is a heading</h1>
+    <p style="color: brown;">
         this is the paragraph 
         sun risers hyderabad are out of playoffs now.
     </p>
+    <h1 id="f1"> this is a heading</h1>
+    <p1 style="color: brown;">
+        this is the paragraph 
+        sun risers hyderabad are out of playoffs now.
+    </p1>
 </body>
 </html>
