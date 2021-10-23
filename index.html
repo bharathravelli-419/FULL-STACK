@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <style>
+     *{
+         margin:0px;
+         padding:0px;
+         box-sizing:border-box;
+     }
+     .background{
+         background-color:black;
+         height:50px;
+        padding:20px;
+        width:50vw;
+        width:100vw;
+     }
+      .innerbackground{
+          height:20px;
+      width:80%;
+          background-color:blueviolet;
+      }
+        
       
-    .background{
-        background-color:aquamarine;
-        height: 250px;
-        width:250px;
-        box-sizing:content-box;
-  
-        padding:50px 10px 10px 30px;
-       margin-left:100px;
-       
-      
-    }
+    
     
     </style>
 </head>
 <body>
-    <div class="background">
-      <h2>FULL STACK</h2>
-       
-    </div>
+   <div class="background">
+       <div   class="innerbackground"></div>
+   </div>
   
   
 </body>
