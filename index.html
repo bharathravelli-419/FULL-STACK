@@ -6,39 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <style>
-    
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:'Times New Roman', Times, serif;
+        *{
+            border-radius:10px;
+         
+        }
+    .one{
+        height:400px;
+        width:400px;
+        background:aquamarine;
+        position:relative;
+
+    }
+    .two{
+        position:absolute;
+        width:100%;
+        height:50%;
+    }
+    h1{
+        position:absolute;
+        top:50%;
+        right:50%;
+         
+
+    }
+    .three{
+        position:absolute;
+       top:60%;
+        width:90%;
+        color:gray;
+        font-family:cursive;
+        padding-left:5%;
+    }
+    .four{
+        position:absolute;
+        bottom:-7%;
+        background-color:red;
+        color:white;
+        height:15%;
+        width:30%;
+        left:36%;
+    }
+    .five{
+        border-radius:50%;
+        background-color:crimson;
+        left:85%;
+        height:45px;
+        width:45px;
+        padding-bottom:3px;
+        font-size:small;
+        text-align: center;
+        position:absolute;
         color:white;
     }
-    div{
-       min-height:200px;
-        margin:20px;
-        background-color:orange;
-        position:fixed;
-       width:70vw;
-        
-  
-      
+    h21{
+        position:absolute;
+        right:30px;
+       
     }
-   
-     
     
-    h2{
-        background-color:red;
-    position:absolute; 
-   bottom:0;
-    }
     
     </style>
 </head>
 
 <body>
-  <div>
-      <h2>this is a heading</h2>
+  <div class="one">
+      
+      <img class="two"  src="https://thumbs.dreamstime.com/b/seine-paris-eiffel-tower-autumn-time-europa-58991649.jpg">
+     <div class="five">
+         <h2 class="h21">11<sup>th</sup></h2>
+     </div>
+    <div>
+        <h1>Paris</h1>
+    </div>
+       <div class="three">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore amet temporibus vero accusamus dolorem neque sed nulla ullam natus, reiciendis culpa saepe, molestias suscipit debitis ad! Sunt repudiandae quibusdam at?</p>
+       </div>
+       <div class="four">
+           <h2>Visit Paris</h2>
+       </div>
+  
   </div>
       
 </body>
