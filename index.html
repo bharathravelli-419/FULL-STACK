@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Todo List</title>
+    <title>CSS-4</title>
+  
     <style>
-           .parent{
+        
+        div.parent{
             background-color:yellow;
-            display: flex;
-            justify-content:right;
-            align-items:center;
             height:300px;
-           }
-           .child{
-               height: 100px;
-               width:100px;
-               background:black;
-           opacity:0;
-           }
-           .parent:hover .child{
-               opacity: 1;
-               
-           }
-
-
-
+            justify-content:right;
+            
+            align-items:center;
+            color:green;
+            font-family:monospace;
+            display:flex;
+            
+        }
+        div.child{
+            background:black;
+            cursor: pointer;
+             opacity:0;
+             height:50px;
+             width:50px;
+             transition:1s ease;
+        }
+        div.parent:hover div.child{
+            opacity:1;
+        }
 
     </style>
-  
-   
 </head>
 <body>
-    <div class= "parent">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore fugit blanditiis sunt quos aut veritatis dolore magni cumque rerum adipisci nulla, excepturi accusantium illum nisi ratione eos, ab perferendis? Tempore vitae ipsam amet vero, delectus praesentium ab recusandae quam, veritatis sequi neque! Dolorem laudantium vel iusto beatae, quasi illo aspernatur?</p>
-        <div class="child">
-
-        </div>
-    </div>
-    
+         <div class="parent">
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam autem maiores similique magni!
+                  Qui placeat error maxime, amet architecto nemo nihil dicta ea incidunt rerum? Harum repellat necessitatibus facilis quo quaerat magni non veritatis corporis eligendi, at minus deserunt asperiores quia eaque voluptatum, repudiandae id in? Corrupti facilis eligendi harum.</p>
+             <div class="child">
+                  
+             </div>
+             
+         </div>
          
 </body>
 </html>
