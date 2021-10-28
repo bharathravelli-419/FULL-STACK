@@ -7,71 +7,41 @@
     <title>CSS-4</title>
   
     <style>
-        *{
-            padding:0px;
-         
-            box-sizing:border-box;
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-        }
+        
         div.parent{
-           
-            height:500px;
-            background-color:rgb(77, 45, 45);
-      
+            background-color:yellow;
+            height:300px;
+            justify-content:right;
+            
+            align-items:center;
+            color:green;
+            font-family:monospace;
+            display:flex;
+            
         }
         div.child{
-            width:100px;
-            height:100px;
-            border-radius:50%;
-            background-color:yellow;
-            animation:2s move ease;
-           animation-fill-mode:forwards;
-           animation-iteration-count:infinite;   
+            background:black;
+            cursor: pointer;
+             opacity:0;
+             height:50px;
+             width:50px;
+             transition:1s ease;
         }
-        div:nth-child(2){
-            width:100px;
-            height:100px;
-            border-radius:50%;
-            background-color:yellow;
-            animation:1s move ease;
-           animation-fill-mode:forwards;
-           animation-iteration-count:infinite; 
-           animation-delay:1s;  
+        div.parent:hover div.child{
+            opacity:1;
         }
-       
-        
-        
-        @keyframes move{
-         0%{
-             transform:translateY(0vw);
-
-         }
-         
-         50%{
-             transform:translate(150px,200px);
-             background-color:orange;
-            
-         }
-         100%{
-             transform:translateY(400px);
-             background-color:black;
-
-         }
-
-        }
-      
 
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="child">
-
-        </div>
-        <div></div>
-    </div>
-         
+         <div class="parent">
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam autem maiores similique magni!
+                  Qui placeat error maxime, amet architecto nemo nihil dicta ea incidunt rerum? Harum repellat necessitatibus facilis quo quaerat magni non veritatis corporis eligendi, at minus deserunt asperiores quia eaque voluptatum, repudiandae id in? Corrupti facilis eligendi harum.</p>
+             <div class="child">
+                  
+             </div>
+             
+         </div>
          
 </body>
 </html>
