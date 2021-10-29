@@ -9,48 +9,55 @@
     <title>Day-15</title>
     <style>
         *{
-            padding: 0px;
             margin:0px;
+            padding:0px;
             box-sizing: border-box;
         }
-  div.parent{
-      background: black;
-      color:white;
-      font-size:2rem;
-  }
-  
-  
-  @media(max-width:550px){
-    div.parent{
-      background: rgb(219, 219, 129) ;
-    font-size:0.8rem;
-      color:black;
-      
+        div.parent{
+            display:flex;
+            align-items:stretch;
+            background-color:black;
+            height:100vh;
+        }
+        div.sidebar{
+            background-color:red;
+            flex-basis:30%;
+        }
+ 
+        div.child{
+            background-color: yellow;
+            flex-basis: 70%;
+        }
+        @media (max-width:550px){
+            div.sidebar{
+           
+            animation:0.5s expanding linear infinite;
+        }
+ 
+        div.child{
+            
+            flex-basis:100%;
+        }
 
-  }
-  }
-  @media(min-width:700px){
-    div.parent{
-      background: rgb(151, 151, 145) ;
-    font-size:0.8rem;
-      color:black;
-      
-
-  }
-
-  }
-  
+        }
+        @keyframes expanding
+        {
+            100%{
+                flex-basis:50%
+            }
+            0%{
+                flex-basis:0%;
+            }
+        }
 
     </style>
 </head>
 
 <body>
-    <div class = "parent">
-        <h1>
-            I'm a heading
-        </h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non repellendus, esse, iusto blanditiis, quae ipsum corrupti autem quaerat animi laboriosam commodi! Soluta, vero! Esse, rerum perferendis ad mollitia alias architecto est, quidem ducimus ut distinctio commodi labore perspiciatis excepturi voluptates ratione totam repellat fuga in fugit nihil quae. Architecto, magni?
-    </div>
+   <div class="parent">
+       <div class="sidebar"></div>
+          <div class="child"></div>
+   </div>
    
 </body>
 </html>
