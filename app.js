@@ -10,3 +10,4 @@ var a,b
 a=21
 b=23
 console.log(a,b)
+console.log(a+' '+b)
