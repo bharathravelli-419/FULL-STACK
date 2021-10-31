@@ -1,23 +1,14 @@
-var heading= document.getElementById('heading')
-console.log(typeof heading)
-heading.innerHTML ="Hi bro"
-heading.style="color:white;background-color:red"
-console.log(heading.classList)
-heading.classList.add('five')
-heading.classList.remove('three')
-console.log(heading.classList)
-var para1=document.getElementsByClassName('para')
-console.log(heading)
-console.log(para1[0])
-console.log(para1[1])
-console.log(para1.length)
-//we don't have access to push function in this type
-var tags = document.getElementsByTagName('p')
-console.log(tags)
-var query = document.querySelector('#heading')
-console.log(query)
-query= document.querySelectorAll('.para')
-console.log(query)
-console.log(para1)
-var dark1= document.querySelector('body')
-dark1.classList.add('dark')
+var list = document.querySelector('ul')
+console.log(list)
+
+
+var arr=['go to the gym','cook omlet','eat']
+arr.push("complete the assignment")
+for(var i=0;i<arr.length;i++){
+   var element = document.createElement('li')
+   var textNode = document.createTextNode(arr[i])
+   element.appendChild(textNode)
+   list.appendChild(element)
+
+}
+   
