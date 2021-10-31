@@ -1,12 +1,23 @@
-var age =[2,2,3,5,'bharath ravelli']
-console.log(typeof age[4])
-console.log(age.length)
-console.log(age)
-age.push(3)
-console.groupCollapsed(age)
-console.log(age.length)
-const var1=3;
-var a,b
-a=21
-b=23
-console.log(a,b)
+var heading= document.getElementById('heading')
+console.log(typeof heading)
+heading.innerHTML ="Hi bro"
+heading.style="color:white;background-color:red"
+console.log(heading.classList)
+heading.classList.add('five')
+heading.classList.remove('three')
+console.log(heading.classList)
+var para1=document.getElementsByClassName('para')
+console.log(heading)
+console.log(para1[0])
+console.log(para1[1])
+console.log(para1.length)
+//we don't have access to push function in this type
+var tags = document.getElementsByTagName('p')
+console.log(tags)
+var query = document.querySelector('#heading')
+console.log(query)
+query= document.querySelectorAll('.para')
+console.log(query)
+console.log(para1)
+var dark1= document.querySelector('body')
+dark1.classList.add('dark')
