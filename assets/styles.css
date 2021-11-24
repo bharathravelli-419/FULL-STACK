@@ -31,3 +31,8 @@ footer{
     bottom:0px;
     width:100%;
 }
+.dark{
+    background-color:rgb(65, 60, 60);
+    color:white;
+
+}
