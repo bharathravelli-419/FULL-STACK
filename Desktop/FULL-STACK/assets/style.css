@@ -13,12 +13,16 @@ div.child{
     height:100px;
     width:100px;
   
-    animation:1s move ease;
-   animation-fill-mode:forwards;
+     animation:1s move ease;
+     animation-fill-mode:forwards;
      animation-iteration-count:infinite;
      animation-direction:alternate-reverse;
      border-radius:50%;
+     opacity:0;
     
+}
+.parent:hover .child{
+    opacity:1;
 }
 
 @keyframes move{
