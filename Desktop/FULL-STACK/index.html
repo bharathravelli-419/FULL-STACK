@@ -14,22 +14,30 @@
         }
         div.parent{
             background-color:black;
-            min-height:300px;
+            min-height:500px;
         }
         div.child{
             background-color: orange;
             height:100px;
             width:100px;
-            transition-duration:1s;
-            transition-timing-function:linear;
-            border-radius: 50%;
+          
+            animation:1s move ease;
+           animation-fill-mode:forwards;
+             animation-iteration-count:infinite;
+             animation-direction:alternate-reverse;
+             border-radius:50%;
             
         }
-        div.parent:hover div.child{
-            background-color:blue;
-             transform: scale(0.4);
-           transform:translateX(100vw);
-           
+     
+        @keyframes move{
+            0%{
+              transform:translateY(0vw);
+            }
+      
+            100%{
+                transform:translateY(100px);
+                background-color:cyan;
+            }
         }
     </style>
 </head>
