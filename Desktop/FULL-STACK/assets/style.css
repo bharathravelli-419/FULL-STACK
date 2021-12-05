@@ -6,32 +6,13 @@
 }
 div.parent{
     background-color:black;
-    min-height:500px;
-}
-div.child{
-    background-color: orange;
-    height:100px;
-    width:100px;
-  
-     animation:1s move ease;
-     animation-fill-mode:forwards;
-     animation-iteration-count:infinite;
-     animation-direction:alternate-reverse;
-     border-radius:50%;
-     opacity:0;
-    
-}
-.parent:hover .child{
-    opacity:1;
-}
+    color:white;
 
-@keyframes move{
-    0%{
-      transform:translateY(0vw);
-    }
-
-    100%{
-        transform:translateY(100px);
-        background-color:cyan;
+}
+@media(max-width:700px){
+    div.parent{
+        background-color: yellow;
+        font-size:0.8rem;
+        color:green;
     }
 }
