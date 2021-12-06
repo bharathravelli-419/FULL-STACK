@@ -1,24 +1,8 @@
-var arr =['go to gym','eat','bath','go to college']
+var body = document.querySelector('body')
+var button = document.querySelector('button')
 
-var callback=(bharathravelli,ds)=>
+callbackfunc=(event)=>
 {
-    console.log(bharathravelli,ds)
+    body.classList.toggle('dark')
 }
-arr.forEach(callback)
-arr.forEach((element,index)=>console.log(element,index))
-button = document.querySelector('button')
-input = document.querySelector('input')
-list = document.querySelector('ul')
-  const callbackfunc=(event)=>
-  {
-    console.log('fsd')
-    console.log(event.target)
-    console.log(event)
-    console.log(input.value)
-    var inputvalue = input.value
-     const element = document.createElement('li')
-     const textnode = document.createTextNode(inputvalue)
-      element.appendChild(textnode)
-      list.appendChild(element)
-  }
-  button.addEventListener('click',callbackfunc)
+button.addEventListener('click',callbackfunc)

@@ -5,10 +5,9 @@
     box-sizing:border-box;
 }
 
-.para{
-    font-size:10px;
-}
+
+
 .dark{
-    background-color: black;
+    background-color: rgb(59, 27, 27);
     color:yellow;
 }
