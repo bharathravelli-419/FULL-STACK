@@ -1,19 +1,24 @@
-function greet(name,age=19){
-    console.log('hello'+' '+name+'age is: '+age)
-}
-greet('bharath')
-function sum(a,b){
-    return a+b
-}
-var sum= sum(10,20)
-console.log(sum)
+var arr =['go to gym','eat','bath','go to college']
 
-var subtract = function (a,b){
-    return a-b
+var callback=(bharathravelli,ds)=>
+{
+    console.log(bharathravelli,ds)
 }
-
-console.log(subtract(10,2))
-var greet1= (a,b)=>{
-    console.log('greetings to ShapeAI')
-}
-greet1()
+arr.forEach(callback)
+arr.forEach((element,index)=>console.log(element,index))
+button = document.querySelector('button')
+input = document.querySelector('input')
+list = document.querySelector('ul')
+  const callbackfunc=(event)=>
+  {
+    console.log('fsd')
+    console.log(event.target)
+    console.log(event)
+    console.log(input.value)
+    var inputvalue = input.value
+     const element = document.createElement('li')
+     const textnode = document.createTextNode(inputvalue)
+      element.appendChild(textnode)
+      list.appendChild(element)
+  }
+  button.addEventListener('click',callbackfunc)
