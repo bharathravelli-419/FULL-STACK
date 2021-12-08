@@ -1,10 +1,24 @@
-var arr =[1,2,3,4,5]
-arr.splice(1,1)
-arr.unshift(6)
-console.log(arr)
-var new_arr =[]
-new_arr = arr.filter((element,index)=>{
-    if(element%2==0) return true
-})
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-console.log(new_arr)
+var chores =[]
+const callbackfunc =(event)=>{
+    const inputValue = input.value
+    if(chores.includes(inputValue))
+    {
+        console.log("already exists")
+    }
+    else{
+        chores.push(inputValue)
+        const element = document.createElement('li')
+        const textNode = document.createTextNode(inputValue)
+        element.appendChild(textNode)
+         list.appendChild(element)
+        element.addEventListener('click',(e)=>{
+            e.target.remove()
+        })
+    }
+}
+
+button.addEventListener('click',callbackfunc)
