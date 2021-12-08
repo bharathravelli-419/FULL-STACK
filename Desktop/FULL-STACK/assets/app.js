@@ -1,4 +1,3 @@
-setTimeout(()=>{
-    console.log("bhavani")
-},5000)
-console.log('HI')
+var data = fetch('https://jsonplaceholder.typicode.com/todos')
+
+console.log(data)
