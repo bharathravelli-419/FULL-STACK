@@ -1,24 +1,14 @@
-var button = document.querySelector('button')
-var input = document.querySelector('input')
-var list = document.querySelector('ul')
-
-var chores =[]
-const callbackfunc =(event)=>{
-    const inputValue = input.value
-    if(chores.includes(inputValue))
-    {
-        console.log("already exists")
-    }
-    else{
-        chores.push(inputValue)
-        const element = document.createElement('li')
-        const textNode = document.createTextNode(inputValue)
-        element.appendChild(textNode)
-         list.appendChild(element)
-        element.addEventListener('click',(e)=>{
-            e.target.remove()
-        })
-    }
+console.log(this)
+let car ={
+      Name:"C class",
+      manufacturer:"mercedes",
+    print1: function (a) {
+        console.log(this)  
+        console.log("car function " +a+ this.Name +" "+car.manufacturer)
+      }
 }
-
-button.addEventListener('click',callbackfunc)
+console.log(typeof car)
+car.print1(' bharath ravelli ')
+console.log(Object.keys(car))
+console.log(Object.values(car))
+console.log(car.hasOwnProperty('Name'))
