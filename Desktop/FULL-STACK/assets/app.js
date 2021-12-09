@@ -1,3 +1,6 @@
-var data = fetch('https://jsonplaceholder.typicode.com/todos')
 
-console.log(data)
+let response = fetch('https://jsonplaceholder.typicode.com/todos')
+var fun=()=>{
+    console.log('hi')
+}
+fun()
