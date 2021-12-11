@@ -1,11 +1,20 @@
-let response = fetch('https://jsonplaceholder.typicode.com/users').then(res =>{
-let par = res.json()
-return par
-}).then( data => {console.log(data)
+const table = document.querySelector('table')
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(res=>{return res.json()}).then(data=>{ console.log(data)
 
-    const callback= (element,index)=>{
-        console.log(element.id,element.name,element.email)
-    }
-    data.forEach(callback)
+data.forEach(user =>{
+   let newRow = document.createElement('tr')
+   let element = `
+   <td>${user.id}</td>
+    <td>${user.name}</td>
+    <td>${user.email}</td>
+    <td>${user.username}</td>`
 
+       newRow.innerHTML=element
+       table.appendChild(newRow)
+})    
 })
+
+
+
+
