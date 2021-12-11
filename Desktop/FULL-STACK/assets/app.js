@@ -1,11 +1,11 @@
-let value = new Promise((resolve,reject)=>{
-    setTimeout(() => {
-        resolve('hello')
-        
-    }, 3000);
-})
+let response = fetch('https://jsonplaceholder.typicode.com/users').then(res =>{
+let par = res.json()
+return par
+}).then( data => {console.log(data)
 
-console.log(value)
-setTimeout(()=>{
- console.log(value)
-},4000)
+    const callback= (element,index)=>{
+        console.log(element.id,element.name,element.email)
+    }
+    data.forEach(callback)
+
+})
