@@ -1,20 +1,23 @@
-const table = document.querySelector('table')
-fetch('https://jsonplaceholder.typicode.com/users')
-.then(res=>{return res.json()}).then(data=>{ console.log(data)
+const button = document.querySelector('button')
+const input = document.querySelector('input')
 
-data.forEach(user =>{
-   let newRow = document.createElement('tr')
-   let element = `
-   <td>${user.id}</td>
-    <td>${user.name}</td>
-    <td>${user.email}</td>
-    <td>${user.username}</td>`
+const getData=async (item)=>{
+    const url = `https://api.edamam.com/search?app_id=bd51454f&app_key=3b359328e30cad3141319969dfedaba9&q=${item}`
+    console.log(url)
+    const res = await fetch(url)
 
-       newRow.innerHTML=element
-       table.appendChild(newRow)
-})    
+    const data = await res.json()
+    console.log(data.hits)
+}
+
+
+
+
+
+
+
+
+
+button.addEventListener('click',(e)=>{
+    getData(input.value)
 })
-
-
-
-
