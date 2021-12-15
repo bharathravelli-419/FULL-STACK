@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,80 +7,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDo List</title>
-  <link rel="stylesheet" href="assets/style.css"/>
-  <script defer src="assets/app.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <link rel="stylesheet" href="css/font-awesome.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/app.js"></script>
 
 </head>
-<body >
-
-
-  <header >
-        <div class="item">
-              <div class="item1">
-                <div style="padding:2px; color:cyan;font-size:30px;font-style:italic;">ToDoList</div>
-                
-              </div>
-
-                      <div class="item2">
-                                <div>
-                                     <input class ="inputBox"style="border-style: hidden;filter:contrast(-10%); background-color: rgb(59, 71, 59);"type="text"placeholder="add a task to the list..">
-                                </div>
-                 
-                        <div class="plusbutton">
-                           +
-                        </div>  
-                      </div>
-
-          <div class="big">
-            <div class="item3">
-
-              <div class="item31">
-                     items
-              </div>
-              <div class="item32">
-                      <div class="item321">
-                        All
-                      </div>
-                      <div class="item322">
-                        Pending
-                      </div>
-                      <div class="item323">
-                        Completed
-                      </div>
-              </div>
-              <div class="item33">
-                   Clear
-              </div>
-              </div>
-              
-            
-       
-       </div>
-
-        </div>
-  </header>
-  <footer>
-          <div>
-              <a href="https://github.com/bharathravelli-419"  target ="_blank"> Bharath Ravelli</a>
-          </div>
-
-    <div>
-  
-      <a href="" target="_blank">
-        <img class="social" src="assets/images/github.png"/>
-      </a>    
-
-      <a href="" target="_blank">
-        <img class="social" src="assets/images/instagram.png"/> 
-     </a>
-
-      <a href="" target="_blank">
-        <img class="social" src="assets/images/linkedin.png"/>
-      </a>
-      
+<body>
+    <div class="normal">Mode 
+    <div class="Mode">
+         
     </div>
+</div> 
+  <div class="container">
+     <div class="header">
+       <div class="clear">
+          <i class="fa fa-refresh"></i>
+       </div>
+       <div id="date"></div>
+     </div>
+     <div class="content">
+        <ul id="list">
+         
+     
+        </ul>
+     </div>
+     <div class="add-to-do">
+         <i class ="fa fa-plus-circle"></i>
+         <input type="text" id="input" placeholder="add to the list...">
+     </div>
 
-  </footer>
+
+  </div>
+  
+
+     
+  
   
 </body>
 </html>
