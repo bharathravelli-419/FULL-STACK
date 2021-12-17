@@ -47,7 +47,10 @@ const getData = async (item)=>{
 
 document.addEventListener('keyup',(e)=>{
    if(e.keyCode==13)
-   getData(input.value)
+  {
+    parent.innerHTML=''
+    getData(input.value)
+  }
 })
 
 
