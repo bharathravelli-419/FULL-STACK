@@ -3,7 +3,7 @@ const input = document.querySelector('input')
 const div = document.querySelector('div')
 div.innerHTML= localStorage.getItem('inputValue')
 const arr = [1,2,3,4,5,"bharath ravelli 419"]
-
+JSON.stringify(arr)
 console.log(JSON.stringify(arr))
 localStorage.setItem('KEY',JSON.stringify(arr))
  console.log(JSON.parse(localStorage.getItem('KEY')))
